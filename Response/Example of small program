@@ -1,0 +1,94 @@
+Abstractions help to simplify things that are more complex and help people to focus on the most relevant concepts. An example is when taking the train, one doesn't need to know the exact dimensions of every turn. Knowing the exact dimensions are useless and can even potentially be distracting. In computer science, we simplify complex protocols by giving them a name. For example, we can just call something "TCP" to make it easier to talk to someone else about the complex systems that people use. Procedures are abstractions that are created. One you have tested a function, you don't have to worry about all the details in the function, but could just use the name you gave the underlying code. This ensures that you will think about the main concepts of your code rather than getting caught up with all the smaller details. 
+
+
+   import turtle as t
+
+
+
+
+
+
+
+
+
+def right():
+
+
+   t.left(60)
+
+
+   t.right(60)
+
+
+   t.right(80)
+
+
+
+
+
+
+
+def drawStep():
+
+
+   t.forward(30)
+
+
+   t.left(80)
+
+
+   t.left(40)
+
+
+   right()
+
+
+
+
+
+
+
+def drawSide():
+
+
+   drawStep()
+
+
+   drawStep()
+
+
+   drawStep()
+
+
+   t.forward(40)
+
+
+   t.right(50)
+
+
+
+
+
+
+
+def drawDiamond():
+
+
+   drawSide()
+
+
+   drawSide()
+
+
+   drawSide()
+
+
+   drawSide()
+
+
+
+
+
+
+
+drawDiamond()
